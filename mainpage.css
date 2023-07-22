@@ -1,0 +1,98 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
+
+}
+body {
+    background: whitesmoke;
+    color: black;
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.brief-about {
+    margin-left: 10px;
+}
+.tagline {
+    color: purple;
+    font-size: 1.9em;
+}
+/*import fonts */
+/*colors: black, white, purple/violet, blue,
+
+maybe some red around the quote*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.99);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 20px;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    font-family: 'Abel', sans-serif;
+}
+.contact-header {
+    display: block;
+    display: flex-end;
+    margin-left: auto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+.name-header {
+    margin-left: 40px; /* Add margin on the left side */
+}
+
+.cv-header,
+.projects-header,
+.about-header {
+    margin: 0 10px; /* Add some spacing between header elements */
+}
+.contact-header {
+    margin-left: auto; /* Align "CONTACT" to the right */
+}
+.about-header {
+    margin-left: auto; /* Align "ABOUT" to the center */
+    margin-right: auto;
+}
+.website-container {
+    margin-top: 70px;
+    font-family: 'Abel', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        color: black; /* Increase font size for larger devices */
+    }
+    .brief-about {
+        font-size: 30px; /* dont keep it at blue lol */
+    }
+    .tagline {
+        color: purple;
+        font-size: 3em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {/*computer at least 12in. */
+    .brief-about {
+        font-size: 55px;
+    }
+    .tagline {
+        color: purple;
+        font-size: 5em;
+    }
+
+
+}
