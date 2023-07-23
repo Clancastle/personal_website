@@ -248,7 +248,7 @@ margin-left: 15px;
         width: 250px;
         height: 250px;
     }
-      
+       
     .p-disc {
         max-width: 250px;
     }
@@ -260,7 +260,6 @@ margin-left: 15px;
         font-size: 55px;
     }
     .tagline {
-        color: purple;
         font-size: 5em;
     }
     .grid {
@@ -274,5 +273,8 @@ margin-left: 15px;
     }
     .p-disc {
         max-width: 305px;
+    }
+    .explore {
+        font-size: 30px;
     }
 }
