@@ -42,6 +42,9 @@ body { /*UPDATE WITH DEVICE WIDTH -- Bigger text, etc*/
     margin-left: 20px;
     margin-top: 20px;
 }
+.skill-s {
+    font-size: 16px;
+}
 .p-disc {
     display: block;
     margin-top: 30px;
@@ -96,13 +99,15 @@ left: 0;
 }
 
 a {
-    color: black;
+    color: #0066cc;
     text-decoration: none;
 }
 .name-header {
     margin-left: 40px; 
 }
-
+.s-p {
+    font-size: 15px;
+}
 .cv-header,
 .projects-header,
 .about-header {
@@ -143,7 +148,7 @@ margin-left: 15px;
 margin: 0;
 font-size: 16px;
 font-weight: bold;
-color: #333;
+color: #000000;
 }
 
 
@@ -151,6 +156,17 @@ color: #333;
 color: #0066cc;
 text-decoration: none;
 }
+.referrals {
+    padding: 20px;    
+margin-bottom: 20px;
+margin-left: 15px;
+}
+.referrals p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    }
 .footer {
     margin-bottom: 20px;
     margin-left: 20px;
@@ -165,7 +181,10 @@ text-decoration: none;
 
 }
 @media only screen and (min-width: 768px) {
-    body {
+    .navbar {
+        font-size: 16px;
+    }
+    body {/* increase text size or p text size*/
         color: black; 
     }
     .brief-about {
@@ -173,9 +192,42 @@ text-decoration: none;
     }
     .tagline {
         color: purple;
-        font-size: 3em;
+        font-size: 43px;
     }
-}
+    .explore {
+        font-size: 21px;
+    }
+    .recent {
+        font-size: 28px;
+    }
+    p, a {
+        font-size: 18px;
+    }
+    .s-p {
+        font-size: 20px;
+    }
+    .skill-s {
+        font-size: 17px;
+    }
+    .testimonials {
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .referral {
+    padding: 30px;    
+    margin-bottom: 20px;
+    margin-left: 20px;
+    }
+    
+    .referral p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    }
+
+
 
 @media only screen and (min-width: 1200px) {/*computer at least 12in. */
     .brief-about {
