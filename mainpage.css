@@ -1,7 +1,13 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
-body {
+/*import fonts */
+/*colors: black, white, purple/violet, blue,
+
+maybe some red around the quote*/
+
+
+body { /*UPDATE WITH DEVICE WIDTH -- Bigger text, etc*/
     background: whitesmoke;
     color: black;
     margin: 0;
@@ -15,45 +21,60 @@ body {
 .github-project {
     border: 1.2px solid black;
     padding: 12px;
-    border-radius: 20px;
-
-
+    border-radius: 20px; 
 }
+
 .margin {
-    margin-top: 70px
+    margin-top: 80px
 }
 .space {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .recent {
     font-size: 20px;
     margin-left: 15px;
-    margin-top: 40px;
+    margin-top: 70px;
+}
+.s-p {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 .p-disc {
     display: block;
     margin-top: 30px;
     margin: 0 auto;
     max-width: 470px;
-
 }
 
-.brief-about {
+.brief-about { /*UPDATE WITH DEVICE WIDTH*/
     margin-left: 10px;
+    font-size: 24px; 
 }
 .tagline {
     color: purple;
-    font-size: 1.9em;
-    margin-top: 80px;
+    font-size: 26px;
+    margin-top: 70px;
+} 
+ul {
+list-style-type: none; /* Remove default bullets */
+padding: 0;
 }
-/*import fonts */
-/*colors: black, white, purple/violet, blue,
 
-maybe some red around the quote*/
+ul li {
+padding-left: 20px;
+position: relative;
+}
 
-.navbar {
+ul li::before {
+content: "\2192"; /* Unicode rightwards arrow symbol */
+position: absolute;
+left: 0;
+}
+  
+.navbar { /*UPDATE WITH DEVICE WIDTH*/
     position: fixed;
     top: 0;
     right: 0;
@@ -62,11 +83,11 @@ maybe some red around the quote*/
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 22px 20px;
+    padding: 17px 20px;
     border-bottom: 1px solid black;
-    font-size: 18px;
+    font-size: 14px;
     font-family: 'Abel', sans-serif;
-}
+} 
 
 .contact-header {
     display: block;
@@ -79,31 +100,31 @@ a {
     text-decoration: none;
 }
 .name-header {
-    margin-left: 40px; /* Add margin on the left side */
+    margin-left: 40px; 
 }
 
 .cv-header,
 .projects-header,
 .about-header {
-    margin: 0 10px; /* Add some spacing between header elements */
+    margin: 0 10px;
 }
 .contact-header {
-    margin-left: auto; /* Align "CONTACT" to the right */
+    margin-left: auto;
 }
 .about-header {
-    margin-left: auto; /* Align "ABOUT" to the center */
+    margin-left: auto; 
     margin-right: auto;
 }
-.website-container {
-    margin-top: 70px;
+.website-container { /*UPDATE WITH DEVICE WIDTH*/
+    margin-top: 75px;
     font-family: 'Abel', sans-serif;
 }
 .explore {
     display: block;
-    text-align: end; /* Align the element to the end of its container */
-    margin-right: 20px; /* This will push the element to the end of its container */
-    margin-top: 90px; /* Add a 90px top margin */
-    font-size: 1.3em;
+    text-align: end;
+    margin-right: 20px;
+    margin-top: 80px;
+    font-size: 16px;
 }
 .recent-project {
     margin-top: 50px;
@@ -130,13 +151,25 @@ color: #333;
 color: #0066cc;
 text-decoration: none;
 }
+.footer {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.footerx {
+    margin: 20px 10px;
+    display: inline-block;
+}
+.copyright {
+    display: flex;
+    justify-content: end;
 
+}
 @media only screen and (min-width: 768px) {
     body {
-        color: black; /* Increase font size for larger devices */
+        color: black; 
     }
     .brief-about {
-        font-size: 30px; /* dont keep it at blue lol */
+        font-size: 30px; 
     }
     .tagline {
         color: purple;
