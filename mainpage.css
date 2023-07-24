@@ -262,7 +262,12 @@ margin-left: 15px;
     .about-t {
         font-size: 19px;
     }
-      
+    .me{
+        width: 520px;
+    }
+    .phil {
+        width: 400px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {/*computer at least 12in. */
