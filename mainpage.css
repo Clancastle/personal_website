@@ -29,6 +29,7 @@ body { /*UPDATE WITH DEVICE WIDTH -- Bigger text, etc*/
     border: 1.2px solid black;
     padding: 12px;
     border-radius: 20px; 
+    max-width: 80%;
 }
 
 .margin {
@@ -185,21 +186,44 @@ margin-left: 15px;
 .footer {
     margin-bottom: 20px;
     margin-left: 20px;
+    display: flex; /* Add this to make the elements in the footer inline */
+    align-items: center; /* Align the items vertically within the footer */
 }
 .footerx {
     margin: 20px 10px;
     display: inline-block;
 }
-.copyright {
+#copyright {
     display: flex;
-    justify-content: end;
+    margin-left: auto;
+    margin-right: 7%;
 
 }
 .h-disc {
     display: block;
     margin-top: 30px;
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 80%;
+}
+footer a {
+    color: #000000;
+}
+.s-e-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+@media only screen and (min-width: 600px){
+    .h-disc {
+        display: block;
+        margin-top: 30px;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+    .github-project {
+        border-radius: 20px; 
+        max-width: 80%;
+    }
 }
 @media only screen and (min-width: 768px) {
     .navbar {
@@ -267,6 +291,21 @@ margin-left: 15px;
     }
     .phil {
         width: 400px;
+    }
+    .s-e-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        
+    }
+    .h-disc {
+        display: block;
+        margin-top: 30px;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+    .github-project {
+        border-radius: 20px; 
+        max-width: 80%;
     }
 }
 
